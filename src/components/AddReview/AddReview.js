@@ -22,7 +22,7 @@ const AddReview = () => {
         formData.append('userName', info.userName);
         formData.append('review', info.review);
 
-        fetch('http://localhost:5000/AddReview', {
+        fetch('https://pure-shore-45304.herokuapp.com/AddReview', {
             method: 'POST',
             body: formData
         })

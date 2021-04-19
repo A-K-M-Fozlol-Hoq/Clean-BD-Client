@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([]) 
     useEffect( () => {
-        fetch('http://localhost:5000/testimonials')
+        fetch('https://pure-shore-45304.herokuapp.com/testimonials')
         .then(res => res.json())
         .then(data => setTestimonials(data))
     }, [])

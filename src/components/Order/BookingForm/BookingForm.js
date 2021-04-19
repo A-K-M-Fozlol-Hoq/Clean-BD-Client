@@ -23,7 +23,7 @@ const BookingForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
         
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://pure-shore-45304.herokuapp.com/addBooking', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

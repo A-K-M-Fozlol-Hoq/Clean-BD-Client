@@ -12,7 +12,7 @@ const Orders = () => {
     const [bookings, setBookings] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://pure-shore-45304.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])

@@ -23,7 +23,7 @@ const AddTestimonial = () => {
         formData.append('title', info.title);
         formData.append('description', info.description);
 
-        fetch('http://localhost:5000/AddTestimonial', {
+        fetch('https://pure-shore-45304.herokuapp.com/AddTestimonial', {
             method: 'POST',
             body: formData
         })

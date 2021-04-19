@@ -13,7 +13,7 @@ const Bookings = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://pure-shore-45304.herokuapp.com/bookings', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
